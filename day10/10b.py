@@ -1,13 +1,3 @@
-# | is a vertical pipe connecting north and south.
-# - is a horizontal pipe connecting east and west.
-# L is a 90-degree bend connecting north and east.
-# J is a 90-degree bend connecting north and west.
-# 7 is a 90-degree bend connecting south and west.
-# F is a 90-degree bend connecting south and east.
-# . is ground; there is no pipe in this tile.
-# S is the starting position of the animal; there is a pipe on this tile, but your sketch doesn't show what shape the pipe has.
-
-
 def next_shift(value, shift):
     if value == "|":
         if shift == (1,0):
@@ -60,9 +50,9 @@ def right_positions(value, shift):
         
     elif value == "F":
         if shift == (0,-1):
-            return []
-        else:
             return [(0,-1), (-1, 0)]
+        else:
+            return []
         
     elif value == "7":
         if shift == (0,1):
@@ -107,11 +97,11 @@ coordinates = dict()
 n = 0
 
 s_coordinates = (0,0)
-position_dict = { (0, -1): ["-","L", "F"], (-1, 0) : ["|","F", "7"], (1, 0): ["|","J", "L"], (0, 1):["-","J", "7"]}
+position_dict = {  (0, 1):["-","J", "7"], (0, -1): ["-","L", "F"], (-1, 0) : ["|","F", "7"], (1, 0): ["|","J", "L"] }
 
 
 
-#2nd step
+# 2nd step
 for shift, values in position_dict.items():
     if (map[S_coordinates[0]+shift[0]][S_coordinates[1]+shift[1]]) in values:
         value = (map[S_coordinates[0]+shift[0]][S_coordinates[1]+shift[1]])
@@ -127,7 +117,7 @@ s_value = False
 while s_value == False:
     
     new_shift = next_shift(value, last_shift)
-    coordinates[tuple(new_coordinates)] = new_shift
+    coordinates[tuple(new_coordinates)] = last_shift
 
     value = (map[new_coordinates[0]+new_shift[0]][new_coordinates[1]+new_shift[1]])
     new_coordinates = [new_coordinates[0]+new_shift[0], new_coordinates[1]+new_shift[1]]
@@ -140,18 +130,63 @@ while s_value == False:
 
 coordinates[tuple(new_coordinates)] = new_shift
 
-print(coordinates)
 
+keys = []
+right = []
+
+for key in coordinates.keys():  
+    keys.append(key)
+print(3)
 for position, shift in coordinates.items():
-    if map [position[0]][position[1]] != "S":
+    if map[position[0]][position[1]] != "S":
         neighb_list = right_positions(map[position[0]][position[1]], shift)
-        print(position)
         if neighb_list != []:
             for a in neighb_list:
-                print(a)
-                col_n = position[1]+a[1]
-                row_n = position[0]+a[0]
-                if (col_n, row_n) not in coordinates:
-                    print("yay", (col_n, row_n))         
+                col_n = position[0]+a[0]
+                row_n = position[1]+a[1]
+                
+                if (col_n, row_n) not in keys :
+                    if (col_n, row_n) not in right:
+                        if col_n > 0 and row_n > 0 and col_n < len(map) and row_n < len(map[0]):
+                            right.append((col_n, row_n))
+
+left = True
+print(4)
+while left == True:
+    left = False
+    for value in right:
+        a = value[0]
+        b = value[1]
+        if b < (len(map[0])):
+            if (a,b+1) not in keys and (a,b+1) not in right:
+                right.append((a,b+1))
+                left = True
+        if b > 0:
+            if (a,b-1) not in keys and (a,b-1) not in right:
+                right.append((a,b-1))
+                left = True
+        if a < (len(map)-1):
+            if (a+1,b) not in keys and (a+1,b) not in right:
+                right.append((a+1,b))
+                left = True
+        if a > 0:
+            if (a-1,b) not in keys and (a-1,b)  not in right:
+                right.append((a-1,b))
+                left = True
+        
 
 
+second_side = []
+for col in range(len(map)):
+    for sym in range(len(map[1])):
+        if (col, sym) not in right and (col, sym) not in keys:
+            second_side.append((col, sym))
+            
+
+
+    
+print(len(right))
+for a in right:
+    if a[0] == 0:
+        print("change side")
+        break
