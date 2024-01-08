@@ -48,10 +48,6 @@ for row_number in range(1, len(manual)-1):
         position_list = []
         if row[symbol_position] == "*":
             numbers = set()
-
-            #    0 1 2
-            #    3 * 4
-            #    5 6 7
                
             for key, direction in positions.items():
                  detected_digit = manual[row_number + direction[0]][symbol_position + direction[1]]
@@ -65,20 +61,20 @@ for row_number in range(1, len(manual)-1):
 
 results = []
 
-for dvojice in results_list:
+for pair in results_list:
     zapis = []
-    if len(dvojice) == 2:
-        for a in dvojice:
+    if len(pair) == 2:
+        for a in pair:
             zapis.append(a)
         results.append(zapis)
 
 print(results)
 
-vysledek = 0        
+res = 0        
 for item in results:
-    vysledek +=  item[0]*item[1]
+    res +=  item[0]*item[1]
 
-print(vysledek)
+print(res)
 
 
 

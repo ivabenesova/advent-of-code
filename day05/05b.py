@@ -73,6 +73,5 @@ for n in range(len(seed_list)):
             if seed_mapped < lowest:
                 lowest = seed_mapped        
     
-    print(lowest)
           
 print(lowest)

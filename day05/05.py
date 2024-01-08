@@ -36,27 +36,7 @@ for list in list_of_lists:
             for number in a.split(" "):
                 number_list.append(int(number))
             maps[list[0]].append(number_list)
-
-
-
-
-# describes how to convert a seed number (the source) to a soil number (the destination). 
-# This lets the gardener and his team know which soil to use with which seeds, which water to use with which fertilizer, and so on.
-
-# Rather than list every source number and its corresponding destination number one by one, 
-# the maps describe entire ranges of numbers that can be converted. Each line within 
-# a map contains three numbers: the destination range start, the source range start, and the range length.
-
-# Consider again the example seed-to-soil map:
-
-# 50 98 2
-# 52 50 48
-
-# The first line has a destination range start of 50, a source range start of 98, and a range length of 2. 
-# This line means that the source range starts at 98 and contains two values: 98 and 99. 
-# The destination range is the same length, but it starts at 50, so its two values are 50 and 51. 
-# With this information, you know that seed number 98 corresponds to soil number 50 and that seed number 99 corresponds to soil number 51.    
-            #[79, 14, 55, 13]    
+ 
 seeds_mapped = []    
 for seed in seeds:
     seed_mapped = seed

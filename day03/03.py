@@ -1,8 +1,7 @@
-
 manual = []
 numbers_to_count = []
 
-with open ("03.txt", encoding = "utf-8", mode = "r" )  as file:
+with open ("03.txt", encoding = "utf-8", mode = "r")  as file:
     for row in file:
         longer_row = "." + row.strip() + "."
         manual.append(longer_row)
@@ -18,8 +17,11 @@ connected_to = False
 number = ""
 
 for row_number in range(len(manual)): 
+
     row = manual[row_number]
+
     for symbol_position in range(1,(len(row)-1)):
+        
         if row_number == 0:
             positions = (manual[row_number][symbol_position-1],
                              manual[row_number][symbol_position+1],
@@ -44,7 +46,6 @@ for row_number in range(len(manual)):
                              manual[row_number-1][symbol_position],
                              manual[row_number-1][symbol_position+1])
              
-
         if row[symbol_position].isdigit():
             is_number = True
             number = number + row[symbol_position]
@@ -63,6 +64,7 @@ for row_number in range(len(manual)):
             elif is_number == True and connected_to == False:
                 number = ""
                 is_number = False
+
 print(sum(numbers_to_count))
 
 

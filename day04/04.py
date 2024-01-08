@@ -6,9 +6,7 @@ with open ("04.txt", encoding = "utf-8", mode = "r" )  as file:
     
     for row in file:
         card_list.append(row)
-        
-        
-
+                
 for row in card_list:  
     card_name =  (row.strip().split(":")[0])
     card_num = ""
@@ -19,7 +17,6 @@ for row in card_list:
     cards[card_num] = 1
     cards2[card_num] = 1  
   
-
 for row in card_list: 
     card_name =  (row.strip().split(":")[0])
     card_num = ""
