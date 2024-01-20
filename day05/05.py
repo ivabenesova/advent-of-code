@@ -8,8 +8,8 @@ list_of_lists = []
 single_list = []
 
 for string in data:
-    if string == "" :
-        if single_list != []:
+    if not string:
+        if single_list:
             list_of_lists.append(single_list)
             single_list = []
     else:

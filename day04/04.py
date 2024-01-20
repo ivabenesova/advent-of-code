@@ -29,7 +29,7 @@ for row in card_list:
     my_numbers = ((row.strip().split(":")[1]).split("|")[1]).strip().split(" ")
     n = 0
     for my_number in my_numbers:
-        if my_number != "":
+        if my_number:
             if my_number in winning_numbers:
                 n += 1
     for a in range(1,n+1):
