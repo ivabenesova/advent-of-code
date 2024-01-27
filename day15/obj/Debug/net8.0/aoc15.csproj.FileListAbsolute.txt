@@ -1,0 +1,14 @@
+/Users/iva.benesova/Developer/CS/aoc15/bin/Debug/net8.0/aoc15
+/Users/iva.benesova/Developer/CS/aoc15/bin/Debug/net8.0/aoc15.deps.json
+/Users/iva.benesova/Developer/CS/aoc15/bin/Debug/net8.0/aoc15.runtimeconfig.json
+/Users/iva.benesova/Developer/CS/aoc15/bin/Debug/net8.0/aoc15.dll
+/Users/iva.benesova/Developer/CS/aoc15/bin/Debug/net8.0/aoc15.pdb
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/aoc15.GeneratedMSBuildEditorConfig.editorconfig
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/aoc15.AssemblyInfoInputs.cache
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/aoc15.AssemblyInfo.cs
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/aoc15.csproj.CoreCompileInputs.cache
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/aoc15.dll
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/refint/aoc15.dll
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/aoc15.pdb
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/aoc15.genruntimeconfig.cache
+/Users/iva.benesova/Developer/CS/aoc15/obj/Debug/net8.0/ref/aoc15.dll
