@@ -1,0 +1,15 @@
+/Users/iva.benesova/Developer/advent-of-code/day16/bin/Debug/net8.0/day16
+/Users/iva.benesova/Developer/advent-of-code/day16/bin/Debug/net8.0/day16.deps.json
+/Users/iva.benesova/Developer/advent-of-code/day16/bin/Debug/net8.0/day16.runtimeconfig.json
+/Users/iva.benesova/Developer/advent-of-code/day16/bin/Debug/net8.0/day16.dll
+/Users/iva.benesova/Developer/advent-of-code/day16/bin/Debug/net8.0/day16.pdb
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/day16.GeneratedMSBuildEditorConfig.editorconfig
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/day16.AssemblyInfoInputs.cache
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/day16.AssemblyInfo.cs
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/day16.csproj.CoreCompileInputs.cache
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/day16.sourcelink.json
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/day16.dll
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/refint/day16.dll
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/day16.pdb
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/day16.genruntimeconfig.cache
+/Users/iva.benesova/Developer/advent-of-code/day16/obj/Debug/net8.0/ref/day16.dll
