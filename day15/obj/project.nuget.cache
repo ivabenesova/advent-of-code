@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hPXLTjLq5W0V//9NEXE2LusfzkgN7SY8roxtHPptCxKCym8BoGGPt9UC0O3NtkXeFIezKKUdpZxPPTAy53AL2Q==",
+  "dgSpecHash": "+U3/YrRDNT6FEirckCwhZH2K1dxCTibi1CDS6NTIxz6eiw/j9yDaxS3Qu/iucTAuZevmkLXsXPh/WmqNXO5JaA==",
   "success": true,
-  "projectFilePath": "/Users/iva.benesova/Developer/CS/aoc15/aoc15.csproj",
+  "projectFilePath": "/Users/iva.benesova/Developer/advent-of-code/day15/aoc15.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

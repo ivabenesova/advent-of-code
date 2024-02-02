@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/iva.benesova/Developer/CS/aoc15/aoc15.csproj": {}
+    "/Users/iva.benesova/Developer/advent-of-code/day15/aoc15.csproj": {}
   },
   "projects": {
-    "/Users/iva.benesova/Developer/CS/aoc15/aoc15.csproj": {
+    "/Users/iva.benesova/Developer/advent-of-code/day15/aoc15.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/iva.benesova/Developer/CS/aoc15/aoc15.csproj",
+        "projectUniqueName": "/Users/iva.benesova/Developer/advent-of-code/day15/aoc15.csproj",
         "projectName": "aoc15",
-        "projectPath": "/Users/iva.benesova/Developer/CS/aoc15/aoc15.csproj",
+        "projectPath": "/Users/iva.benesova/Developer/advent-of-code/day15/aoc15.csproj",
         "packagesPath": "/Users/iva.benesova/.nuget/packages/",
-        "outputPath": "/Users/iva.benesova/Developer/CS/aoc15/obj/",
+        "outputPath": "/Users/iva.benesova/Developer/advent-of-code/day15/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/iva.benesova/.nuget/NuGet/NuGet.Config"
